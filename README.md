@@ -86,8 +86,8 @@ Despite its small size, Florence-2 achieves better zero-shot results than Kosmos
 
 # 🏋🏾‍♂️ Finetuning
 Even if Florence-2 supports many tasks, maybe your task or domain might not be supported, or you may want to better control the model's output for your task. That's when you will need to fine-tune.
-- This post shows an example on fine-tuning Florence on DocVQA.
-- Finetuning notebook
+- This post shows an example on [fine-tuning Florence on DocVQA](https://huggingface.co/blog/finetune-florence2).
+- [Finetuning notebook]()
 
 
 # 🗂 Resources
