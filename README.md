@@ -24,10 +24,10 @@ Despite its small size, it achieves results comparable to those of much larger m
 #### **Florence-2 model series**
 | Model   | Model size | Model Description | 
 | ------- | ------------- |   ------------- |  
-| Florence-2-base[[HF]](https://huggingface.co/microsoft/Florence-2-base) | 0.23B | Pretrained model with FLD-5B  
-| Florence-2-large[[HF]](https://huggingface.co/microsoft/Florence-2-large) | 0.77B  | Pretrained model with FLD-5B  
-| Florence-2-base-ft[[HF]](https://huggingface.co/microsoft/Florence-2-base-ft) | 0.23B  | Finetuned model on a colletion of downstream tasks
-| Florence-2-large-ft[[HF]](https://huggingface.co/microsoft/Florence-2-large-ft) | 0.77B | Finetuned model on a colletion of downstream tasks
+| Florence-2-base [[HF]](https://huggingface.co/microsoft/Florence-2-base) | 0.23B | Pretrained model with FLD-5B  
+| Florence-2-large [[HF]](https://huggingface.co/microsoft/Florence-2-large) | 0.77B  | Pretrained model with FLD-5B  
+| Florence-2-base-ft [[HF]](https://huggingface.co/microsoft/Florence-2-base-ft) | 0.23B  | Finetuned model on a colletion of downstream tasks
+| Florence-2-large-ft [[HF]](https://huggingface.co/microsoft/Florence-2-large-ft) | 0.77B | Finetuned model on a colletion of downstream tasks
 
 #### **Tasks**
 Florence 2 supports many tasks out of the box:
@@ -41,7 +41,7 @@ Florence 2 supports many tasks out of the box:
 -  **segmentation**,
 -  **Region proposal**,
 -  **OCR**,
--  **OCR with Region**.
+-  **OCR with Region**.  
 You can try out the model via [HF Space]().
 
 
@@ -96,14 +96,11 @@ Even if Florence-2 supports many tasks, maybe your task or domain might not be s
 | **Florence-2 Demo** | Demo  | HF Space | [Link]() |
 | **Florence-2 DocVQA Demo** | Demo  | HF Space | [Link]() |
 | **Florence-2 Finetuned Demo** | Demo  | HF Space | [Link]() |
-
 | **Florence-2 Inference Notebook** | Notebook  | Notebook | [Link]() |
 | **Florence-2 Finetuning Notebook** | Notebook  | Notebook | [Link]() |
-
 | **Vision Language Models Explained** |  Blog article | article | [Link](https://huggingface.co/blog/vlms) |
-
 | **Florence-2 Finetuning on DocVQA** | Video  | Video | [Link]() |
-| **Florence-2 Finetuning on ** | Video  | Vido | [Link]() |
+| **Florence-2 Finetuning on** | Video  | Vido | [Link]() |
 
 
 # 🔗 Citations and References
