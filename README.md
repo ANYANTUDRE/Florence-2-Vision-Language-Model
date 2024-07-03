@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Florence-2 - Microsoft's Cutting-edge Vision Language Models</h1>
+  <h1>Florence-2: Microsoft's Cutting-edge Vision Language Models</h1>
   <p align="center">
     🕸 <a href="https://www.linkedin.com/in/anyantudre">LinkedIn</a> • 
     📙 <a href="https://www.kaggle.com/waalbannyantudre">Kaggle</a> • 
