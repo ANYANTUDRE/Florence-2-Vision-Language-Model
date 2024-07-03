@@ -94,15 +94,18 @@ Even if Florence-2 supports many tasks, maybe your task or domain might not be s
 This post shows an example on fine-tuning Florence on DocVQA.
 
 
-# 🗂 Useful Resources
+# 🗂 Resources
 
-| Title | Articles | Brief Description  | Links |
+| Title | Type | Brief Description  | Links |
 |---------|--------------------|-------------------------------|----------------------------------------------------------|
-| **Vision Language Models Explained** |  Blog articles | something here | [Link](https://huggingface.co/blog/vlms) |
-| **Florence-2 Demo** |   | something here| [Link]() |
-| **Florence-2 DocVQA Demo** |   | something here| [Link]() |
-| **Florence-2 Inference Notebook** |  | something here | [Link]() |
-| **Florence-2 Finetuning Notebook** |  | something here | [Link]() |
+| **Florence-2 Demo** | Demo  | HF Space | [Link]() |
+| **Florence-2 DocVQA Demo** | Demo  | HF Space | [Link]() |
+| **Florence-2 Finetuned Demo** | Demo  | HF Space | [Link]() |
+
+| **Florence-2 Inference Notebook** | Notebook  | Notebook | [Link]() |
+| **Florence-2 Finetuning Notebook** | Notebook  | Notebook | [Link]() |
+
+| **Vision Language Models Explained** |  Blog article | article | [Link](https://huggingface.co/blog/vlms) |
 
 
 # 🔗 Citations and References
