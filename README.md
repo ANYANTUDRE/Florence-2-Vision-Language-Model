@@ -9,7 +9,7 @@
 </div>
 <br/>
 
-<a href=""> <img src="" alt="Open In "></a>
+<a href=""> <img src="https://github.com/ANYANTUDRE/Florence-2-Vision-Language-Model/blob/main/img/card.png" alt="Open In" style = 'align-items:center'></a>
 
 # Short Links
 - [Florence-2 technical report](https://arxiv.org/abs/2311.06242)
