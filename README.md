@@ -11,19 +11,39 @@
 
 <a href=""> <img src="" alt="Open In "></a>
 
-# Description
+# Short Links
+- [Florence-2 technical report](https://arxiv.org/abs/2311.06242)
+- [HuggingFace's transformers implementation of Florence-2 model](https://huggingface.co/microsoft/Florence-2-large)
+- 
+
+
+# Model Description
 Florence-2, released by Microsoft in June 2024, is a lightweight foundation vision-language model open-sourced under the MIT license. This model is very attractive because of its small size (0.2B and 0.7B) and strong performance on a variety of computer vision and vision-language tasks.
 Despite its small size, it achieves results on par with models many times larger, like Kosmos-2. The model's strength lies not in a complex architecture but in the large-scale FLD-5B dataset, consisting of 126 million images and 5.4 billion comprehensive visual annotations.
 
-Florence supports many tasks out of the box:
--  **captioning**, 
--  **object detection**,
--  **OCR**,
--  **grounding**,
--  **segmentation**,
--  
+Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks. Florence-2 can interpret simple text prompts to perform tasks like captioning, object detection, and segmentation. It leverages our FLD-5B dataset, containing 5.4 billion annotations across 126 million images, to master multi-task learning. The model's sequence-to-sequence architecture enables it to excel in both zero-shot and fine-tuned settings, proving to be a competitive vision foundation model.
 
-ou can try out the model via HF Space or Google Colab.
+| Model   | Model size | Model Description | 
+| ------- | ------------- |   ------------- |  
+| Florence-2-base[[HF]](https://huggingface.co/microsoft/Florence-2-base) | 0.23B | Pretrained model with FLD-5B  
+| Florence-2-large[[HF]](https://huggingface.co/microsoft/Florence-2-large) | 0.77B  | Pretrained model with FLD-5B  
+| Florence-2-base-ft[[HF]](https://huggingface.co/microsoft/Florence-2-base-ft) | 0.23B  | Finetuned model on a colletion of downstream tasks
+| Florence-2-large-ft[[HF]](https://huggingface.co/microsoft/Florence-2-large-ft) | 0.77B | Finetuned model on a colletion of downstream tasks
+
+Florence 2 supports many tasks out of the box:
+-  **Caption**,
+-  **Detailed Caption**,
+-  **More Detailed Caption**,
+-  **Dense Region Caption**,
+-  **Object Detection**,
+-  **OCR**,
+-  **Caption to Phrase Grounding**,
+-  **segmentation**,
+-  **Region proposal**,
+-  **OCR**,
+-  **OCR with Region**.
+
+You can try out the model via HF Space or Google Colab.
 
 # Unified Representation
 Vision tasks are diverse and vary in terms of spatial hierarchy and semantic granularity. Instance segmentation provides detailed information about object locations within an image but lacks semantic information. On the other hand, image captioning allows for a deeper understanding of the relationships between objects, but without reference to their actual locations.
@@ -64,60 +84,27 @@ Florence-2 is smaller and more accurate than its predecessors. The Florence-2 se
 
 Despite its small size, Florence-2 achieves better zero-shot results than Kosmos-2 across all benchmarks, even though Kosmos-2 has 1.6 billion parameters.
 
+#### Examples
+
+# Useful Resources
+
+| Title | Articles | Brief Description  | Links |
+|---------|--------------------|-------------------------------|----------------------------------------------------------|
+| **Vision Language Models Explained** |  Blog articles | something here | [Link](https://huggingface.co/blog/vlms) |
+| **Florence-2 Demo** |   | something here| [Link]() |
+| **Florence-2 DocVQA Demo** |   | something here| [Link]() |
+| **Florence-2 Inference Notebook** |  | something here | [Link]() |
+| **Florence-2 Finetuning Notebook** |  | something here | [Link]() |
+
 
 # Citations
+- @article{xiao2023florence,
+  title={Florence-2: Advancing a unified representation for a variety of vision tasks},
+  author={Xiao, Bin and Wu, Haiping and Xu, Weijian and Dai, Xiyang and Hu, Houdong and Lu, Yumao and Zeng, Michael and Liu, Ce and Yuan, Lu},
+  journal={arXiv preprint arXiv:2311.06242},
+  year={2023}
+}
+
 - Piotr Skalski. (Jun 20, 2024). Florence-2: Open Source Vision Foundation Model by Microsoft. [Roboflow Blog](https://blog.roboflow.com/florence-2/)
-
-
-# Structure du repository
-
-Les répertoires de ce repo sont organisés comme suit :  
-
-## 1. Mini-Projets & Applications Pratiques
-
-| Titre | Mot Clés | Description | Notebook | Status |
-| --- | --- | --- | --- | --- |
-| **1. Sentiment Analysis** | **Keras, RNN, LSTMs** | Analyser les sentiments de commentaires en ligne | [Open or Download](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/blob/main/01.%20Notebooks%20-%20Mini%20Projets%20et%20Applications%20Pratique/01.%201er%20Mini%20Projet%20-%20Sentiment%20Analysis%20with%20Keras.ipynb) | Done ✅ |
-| **2. L'API pipeline de 🤗** | **transformers, pipeline** | Utilisation de l'API pipeline pour effectuer des taches de one shot classification, traduction, résumé, NER etc... | [Open or Download](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/blob/main/01.%20Notebooks%20-%20Mini%20Projets%20et%20Applications%20Pratique/02.%20Transformers%20-%20La%20fonction%20pipeline%20.ipynb) | Done ✅ |
-| **3. Initiation à Gradio** | **Gradio, transformers** | Developper des interfaces UI pour un LLM et deploiement sur 🤗 | [Open or Download](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/blob/main/01.%20Notebooks%20-%20Mini%20Projets%20et%20Applications%20Pratique/03.%20Intro%20%C3%A0%20Gradio%20-%20Developper%20des%20interfaces%20UI%20pour%20un%20LLM.ipynb) | Done ✅ |
-| **4. Utilisation des transformers** | **transformers, AutoTokenizer, TFAutoModel, TFBertModel...** | Familiarization avec la bibliothèque transformers | [Open or Download](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/blob/main/01.%20Notebooks%20-%20Mini%20Projets%20et%20Applications%20Pratique/04-%20Utilisation%20des%20transformers.ipynb) | Done ✅ |
-| **5. Prompt Engineering** | **In context learning: zero, one and few shot inference avec le modèle prétrainé FLAN-T5** | Application des techniques de prompt engineering pour  améliorer les complétions des LLMs. | [Open or Download](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/blob/main/01.%20Notebooks%20-%20Mini%20Projets%20et%20Applications%20Pratique/05.%20Prompt%20Engineering%20avec%20FLAN-T5.ipynb) | Not Yet 🔜 |
-| **6. Déploiement d'un modèle multilingue sur 🤗** | ** ** | ** ** | [Open or Download]() | Not Yet 🔜 |
-| **7. Full instruction Fine-tuning 🤗** | ** ** | ** ** | [Open or Download]() | Not Yet 🔜 |
-| **8. Fine-tuning with LoRA and QLoRA 🤗** | ** ** | ** ** | [Open or Download]() | Not Yet 🔜 |
-
-
-
-## 2. Séances de Formations & Supports de Cours
-
-| Titre | Date | Objectifs | Supports | 
-|---------|---------|-------------------|--------------------------------|
-| **1. Intro au Deep Learning & NLP** | 17/04/2024, 19h GMT | Introduire les concepts fondamentaux de **Réseaux de Neurones**, de **Backpropagation** ainsi que le **pipeline classique du NLP** | [Supports](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/tree/main/02.%20Supports%20de%20Cours%20-%20Formations/01.%20S%C3%A9ance%201)|
-| **2. 1er Projet et Intro to Generative AI & Transformers** | 27/04/2024, 19h GMT | Pratiquer les notions de **OneHotEncoding, Embedding, RNNs, LSTMs** & Vue d'ensemble sur l'**IA Générative**, le **Prompt Engineering** et l'**architecture des Transformateurs** (high level) | [Supports](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/tree/main/02.%20Supports%20de%20Cours%20-%20Formations/02.%20S%C3%A9ance%202) |
-| **3. Architecture détaillée des Transformers & 2ème Projet** |  | Détails sur les **Encodeurs, les Décodeurs et les Encodeurs-Décodeurs**  | [Supports](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/tree/main/02.%20Supports%20de%20Cours%20-%20Formations/03.%20S%C3%A9ance%203) |
-| **4. Utilisation des Transformers avec Hugging Face** | 19/05/2024, 19h GMT  | Introduction à la bibliothèque 🤗 **transformers**: Utilisation des classes de **Tokenizers**, de **Modèles prétrainés (BERT base & DistilBERT)**, techniques de **padding, truncation, batching** etc...  | [Supports](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/tree/main/02.%20Supports%20de%20Cours%20-%20Formations/04.%20S%C3%A9ance%204%20-%20Utilisation%20des%20Transformers%20de%20Hugging%20Face) |
-| **5. Rappels & Quantization** | 25/05/2024, 20h GMT  | - Retour sur la bibliothèque 🤗 **transformers**    - Technique de **Quantization** | [Supports](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/tree/main/02.%20Supports%20de%20Cours%20-%20Formations/05.%20S%C3%A9ance%205%20-%20Quantization%20%26%20Rappels) |
-| **6. Multi-task instruction Fine-tuning & 3ème & 4ème projets** | 26/05/2024, 20h GMT  | **- Projet Prompt Engineering  - Déploiement d'un modèle multilingue sur Hugging Face avec Gradio - Notion de Fine-tuning d'un LLM: Processus de Fine-tuning, Catastrophic Forgetting & Multi-task instruction Fine-tuning**| [Supports](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/tree/main/02.%20Supports%20de%20Cours%20-%20Formations/06.%20S%C3%A9ance%206%20-%20%20Fine-tuning%20process%20%26%20Instruction%20Fine-tuning) |
-| **7. Evaluation metrics & PEFT (LoRA et QLoRA) & 5ème projet** | Coming soon...  | **- Evaluation des LLMs: scores ROUGE et BLEU  - PEFT et Techniques de Reparamétrisation: LoRA et QLoRA**| [Supports](https://github.com/ANYANTUDRE/Stage-IA-Selever-GO-AI-Corp/tree/main/02.%20Supports%20de%20Cours%20-%20Formations/07.%20S%C3%A9ance%207%20-%20M%C3%A9triques%20%26%20%20PEFTs%20-%20LoRA%20%26%20QLoRA) |
-
-
-
-
-
-## 3. Les Ressources à consulter absolument
-
-| Titre | Connaissances à acquérir | Brève Description  | Liens |
-|---------|--------------------|-------------------------------|----------------------------------------------------------|
-| **1. NLP Course on Hugging Face** |  **Transformers** | Cours sur le NLP et la bibliothèque transformers de Hugging Face| [Lien](https://github.com/ANYANTUDRE/NLP-Course-Hugging-Face) |
-| **2. Formation FIDLE** | **Maths & Backpropagation, CNNs, RNNs, Transformers, GNNs etc...**  | Formation d'Introduction au Deep Learning sur Youtube | [Lien](https://www.youtube.com/playlist?list=PLlI0-qAzf2SZQ_ZRAh4u4zbb-MQHOW7IZ) |
-| **3. The Illustrated Transformer** | **L'architecture des Transformers et la Self-Attention détaillée et illustrée**  | Article - Blog post de Jay Alammar | [Lien](https://jalammar.github.io/illustrated-transformer/) |
-
-
-
-## 4.  Les Ressources supplémentaires pour approfondir vos connaissances
-
-| Titre | Connaissances à acquérir | Brève Description  | Liens |
-|---------|--------------------|-------------------------------|------------------------|
-| **1. Formation FIDLE** | **Maths & Backpropagation, CNNs, RNNs, Transformers, GNNs etc...**  | Formation d'Introduction au Deep Learning sur Youtube | [Lien](https://www.youtube.com/playlist?list=PLlI0-qAzf2SZQ_ZRAh4u4zbb-MQHOW7IZ) |
-| **2. Documentation officielle des Transformers** | **Transformes en général**  | Doc officielle sur Hugging Face | [Lien](https://huggingface.co/docs/transformers/index) |
+- [Fine-tuning Florence-2 - Microsoft's Cutting-edge Vision Language Models](https://huggingface.co/blog/finetune-florence2)
 
